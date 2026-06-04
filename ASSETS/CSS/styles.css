@@ -1,0 +1,67 @@
+body {
+  /* Eliminamos el margen por defecto que trae el navegador */
+  margin: 0;
+
+  /* Definimos la familia tipográfica principal del sitio */
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* Color de fondo general de la página */
+  background-color: #008cff
+  ;
+}
+
+h1, h2, h3 {
+  /* Color de fondo del bloque del título */
+  background-color: #008cff;
+
+  /* Color del texto */
+  color: rgb(255, 0, 0);
+
+  /* Centra el texto horizontalmente */
+  text-align: center;
+
+  /* Espacio interno entre el texto y los bordes del bloque */
+  padding: 30px;
+
+  /* Quitamos el margen por defecto del h1 */
+  margin: 0;
+}
+.centrada {
+    display: block;
+    margin: auto;
+}
+/* =========================
+   MEDIA QUERY - TABLET
+========================= */
+
+@media (min-width: 768px) {
+
+    .tarjetas {
+        flex-direction: row;
+    }
+
+    .card-info {
+        flex: 1;
+    }
+}
+
+/* =========================
+   MEDIA QUERY - ESCRITORIO
+========================= */
+
+@media (min-width: 1024px) {
+
+    .contenedor-grid {
+        grid-template-columns: 2fr 1fr;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .hero {
+        padding: 4rem 2rem;
+    }
+
+    body {
+        font-size: 18px;
+    }
+}
